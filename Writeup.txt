@@ -1,0 +1,19 @@
+Recursion Assignment
+Nodirbek Zayniddinov and Aditya Adhikari
+
+All three classes compile and pass the local tests. No correctness errors
+were found in these tests. The school autograder has not been run because command 
+"submit112 recea" is not working, so feedback.txt is not included.
+
+RecursionTest reports: All 118 checks passed.
+
+The Catalan tests check base cases, larger values through C(35), negative
+inputs, and inputs too large for long. PigRollSequences tests check the
+assignment examples, totals 0 and 1, larger totals through 50, and invalid
+inputs. Game tests cover both players, steps, hops, blocked and empty boards,
+and the assignment examples. They also check repeated calls and confirm that
+the input board stays unchanged. Invalid inputs are checked for exceptions
+with error messages.
+
+The game solver does not cache positions, so larger boards can take a long
+time. Very long games may also exceed Java's recursion stack.
